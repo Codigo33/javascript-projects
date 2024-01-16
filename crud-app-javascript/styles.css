@@ -1,0 +1,77 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    /* margin: 0; */
+}
+.input__container {
+    margin-bottom: 20px;
+}
+
+.input__name,
+.input__email,
+.input__update-name,
+.input__update-email {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.input__name:focus,
+.input__email:focus,
+.input__update-name:focus,
+.input__update-email:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175, 233, .6);
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #3e8e41;
+}
+.input__table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input__th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.input__th {
+    background-color: #4CAF50;
+    color: white;
+}
+.update__container {
+    display: none;
+    margin-top: 20px;
+}
+.input__update-btn {
+    background-color: #2196f3;
+}
+.input__cancel-btn {
+    background-color: #f44336;
+}
+.input__edit-btn {
+    background-color: #ffc107;
+}
+.input__delete-btn {
+    background-color: #dc3545;
+    margin-left: 10px;
+}

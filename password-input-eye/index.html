@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Input</title>
+    <!--============ CSS ==============-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div class="box">
+        <div class="input__wrapper">
+            <input 
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Ingresa tu password"
+                title="Minimo 6 caracteres y al menos 1 numero"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                class="input__field"
+                required
+            >
+            <label for="password" class="input__label">
+                Password
+            </label>
+            <img src="img/eye.svg" alt="Eye Icon" title="Eye Icon" class="input__icon">
+        </div>
+    </div>
+
+    <!--============ JS ==============-->
+    <script src="js/index.js"></script>
+</body>
+</html>

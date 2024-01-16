@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD Operations</h1>
+        <div class="input__container">
+            <input type="text" id="name-input" class="input__name" placeholder="Enter Name">
+            <input type="email" id="email-input" class="input__email" placeholder="Enter Email">
+            <button id="add-btn" class="input__add-btn">Add</button>
+        </div>
+
+        <table class="input__table">
+            <thead>
+                <tr>
+                    <th class="input__th">ID</th>
+                    <th class="input__th">Name</th>
+                    <th class="input__th">Email</th>
+                    <th class="input__th">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body" class="table__body"></tbody>
+        </table>
+        <div class="update__container">
+            <input type="text" id="update-input-name" class="input__update-name">
+            <input type="email" id="update-input-email" class="input__update-email">
+            <button id="update-btn">Update</button>
+            <button id="cancel-btn" class="input__cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

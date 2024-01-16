@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #343F4F;
+}
+
+.wrapper{
+    max-width: 1200px;
+    position: relative;
+}
+
+/* Estilos a los botones */
+.wrapper svg {
+    top: 50%;
+    background-color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.wrapper svg:first-child {
+    left: -23px;
+    display: none;
+}
+.wrapper svg:last-child {
+    right: -23px;
+}
+
+/* Display inline */
+.wrapper .carousel {
+    font-size: 0px; /* Quita espacio entre las imagenes*/
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden; /* Oculta el contenido sobrante */
+    scroll-behavior: smooth;
+}
+
+/* Agregando scroll auto en la clase dragging */
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img {
+    pointer-events: none; /* Permite hacer clic a través de la superposición */
+    /* En caso de querer dejar el arrastre con transicion, sacar este atributo */
+}
+
+/* Estilos de la imagen */
+.carousel img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+
+/* Quita el margin-left de la primer imagen */
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+
+/* Responsive design */
+@media screen and (min-width: 425px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+@media screen and (min-width: 0) and (max-width: 425px) {
+    .carousel img {
+        width: 100%;
+    }
+}
